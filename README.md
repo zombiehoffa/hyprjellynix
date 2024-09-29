@@ -3,18 +3,21 @@ my poor quality configuration.nix to (probably) turn any base nix install into a
 
 
 Just do a normal nixos install witho automatic user login then put this in for your configuration.nix in /etc/nixos/ and make a few changes:
+
 -timezone
+
 -make the username in users.user.hyprjellynix, home-managers.users.hyprjellynix, and services.displayManager.autoloing.user to match the user you created during install
+
 - Change the i18n.defaultLocale to something that makes sense for you if needed
 
-  Then add the home-manager nixos module : https://nix-community.github.io/home-manager/index.xhtml#sec-install-nixos-module
+-  Then add the home-manager nixos module : https://nix-community.github.io/home-manager/index.xhtml#sec-install-nixos-module
   as of this writing these are the commands:
   sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz home-manager
 
   sudo nix-channel --update
 
 
-  then do a nixos-rebuild switch then reboot if it works and watch hyprland autologin and start jellyfin-media-player and jellyfin-mpv-shim after 30 seconds
+ - then do a nixos-rebuild switch then reboot if it works and watch hyprland autologin and start jellyfin-media-player and jellyfin-mpv-shim after 30 seconds
 
   You may have to adjust the audio in the jellyfin settings to point to the right HDMI device (I certainly did).
 
