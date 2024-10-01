@@ -28,10 +28,10 @@
   networking.networkmanager.enable = true;
 
   # Set your time zone.
-  time.timeZone = "America/Chicago";
+  time.timeZone = "America/Edmonton";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "en_CA.UTF-8";
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -87,6 +87,8 @@ home-manager.users.hyprjellynix = { pkgs, ... }: {
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
+    monitor = "HDMI-A-2,3840x2160, 0x0, 1";
+    workspace = "1, monitor:HDMI-A-2, default:true";
     bind =
       [
         "$mod, F, exec, librewolf"
