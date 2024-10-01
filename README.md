@@ -4,11 +4,12 @@ my poor quality configuration.nix to (probably) turn any base nix install into a
 
 Just do a normal nixos install witho automatic user login then put this in for your configuration.nix in /etc/nixos/ and make a few changes:
 
--timezone
+- timezone
 
--make the username in users.user.hyprjellynix, home-managers.users.hyprjellynix, and services.displayManager.autoloing.user to match the user you created during install
+- make the username in users.user.hyprjellynix, home-managers.users.hyprjellynix, and services.displayManager.autoloing.user to match the user you created during install
 
 - Change the i18n.defaultLocale to something that makes sense for you if needed
+- Adjust the monitor name  and monitor in the workspace to match your situation.
 
 -  Then add the home-manager nixos module : https://nix-community.github.io/home-manager/index.xhtml#sec-install-nixos-module
   as of this writing these are the commands:
