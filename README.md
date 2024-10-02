@@ -1,5 +1,5 @@
 # hyprjellynix
-my poor quality configuration.nix to (probably) turn any base nix install into a jellyfin client box
+my poor quality configuration.nix to (probably) turn any base nix install into a jellyfin client box. I am currently using this with beelink mini s12's and amazon firestick remotes. https://www.amazon.ca/gp/product/B08XBVXNFP?th=1
 
 
 Just do a normal nixos install witho automatic user login then put this in for your configuration.nix in /etc/nixos/ and make a few changes:
