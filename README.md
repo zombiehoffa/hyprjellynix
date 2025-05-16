@@ -1,3 +1,6 @@
+#EDIT
+I'm abandoning this because bazzite is just shockingly easier. I have included the bazzite bootstrap.sh file I use to bootstrap my bazzite boxes. If you install bazzite and make the user "jelly" and set it to not have a password the boot strap should upgrade system, turn off screen locking/logout then  install jellyfinmediaplayer as a flat pak, then create a systemd service that will start it in tv mode with a scale-facotr of 1.25 on boot then remind you to change the setting so the amazon remote stops popping up the reboot options when you hit the power button.
+
 # hyprjellynix
 my poor quality configuration.nix to (probably) turn any base nix install into a jellyfin client box. I am currently using this with beelink mini s12's and amazon firestick remotes. https://www.amazon.ca/gp/product/B08XBVXNFP?th=1
 
